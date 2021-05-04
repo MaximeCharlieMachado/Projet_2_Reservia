@@ -1,0 +1,14 @@
+1 : Créer un repository en ligne
+
+2:  Créer un repository local : git init
+
+3:  Déclarer notre repo en ligne : git remote add origin https://github.com/MaximeCharlieMachado/Projet_2_Reservia.git
+
+4:  (optionel) Créer une branche : git branch -M main
+
+--Boucle--
+5:  Modification de notre repo : git add .
+				 git commit -m "Ajout du titre"
+				 git push
+
+6:  Check l'état du repo local : git status
