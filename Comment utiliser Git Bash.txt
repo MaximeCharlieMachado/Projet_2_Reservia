@@ -12,3 +12,9 @@
 				 git push
 
 6:  Check l'état du repo local : git status
+
+7: Mettre tous les chagements de côté nommé "save" : git stash save
+
+8: Déplace vers un ancien commit : git checkout ad3a5d0
+
+9: Remets le stash :  git pop
