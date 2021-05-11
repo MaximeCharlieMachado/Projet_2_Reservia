@@ -1,52 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/3689467a52.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 
 <body>
-    <!---------------------------------------->
-    <header>
-        <h1>Reservia</h1>
-        <p>Trouver votre hébergement pour des vacances de rêve
-            <nav>
-                <ul>
-                    <li><a href="#">Herbergement</a></li>
-                    <li><a href="#">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </p>
+    <!--Header--->
+    <header id="header" class="card">
+        <nav>
+            <a href="#" id="logo">
+                <img src="images/logo/Reservia.svg" alt="Logo du site">
+            </a>
+
+            <ul>
+                <li><a href="#" class="nav-link">Herbergement</a></li>
+                <li><a href="#" class="nav-link">Activités</a></li>
+                <li><a href="#" class="register-link">S'inscrire</a></li>
+            </ul>
+        </nav>
+
+        <!--Barre de Recherche-->
+        <section id="recherche">
+            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <form action="#" class="search-form">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Marseille, France">
+                <button type="button" class="search-button">Rechercher</button>
+            </form>
+
+        </section>
+
+        <!--Barre du Filtres-->
+        <section id="filtre" class="section-button">
+            <h2 class="filter-title">Filtres</h2>
+            <button type="button" class="filter-button">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>&Eacute;conomique</span>
+            </button>
+            <button type="button" class="filter-button">
+                <i class="fas fa-child"></i>
+                <span>Familial</span>
+            </button>
+            <button type="button" class="filter-button">
+                <i class="fas fa-heart"></i>
+                <span>Romantique</span>
+            </button>
+            <button type="button" class="filter-button">
+                <i class="fas fa-dog"></i>
+                <span>Animaux autorisés</span>
+            </button>
+        </section>
     </header>
-    <!---------------------------------------->
-    <section>
-        <h2>Hébergements à Marseille
-            <p>
 
-            </p>
-        </h2>
-    </section>
 
-    <!--La partie à Gauche-->
-    <aside>
-        <h1>Les plus populaires
-            <p> 
-            </p>
-        </h2>
-    </asiden>
 
-    <!---------------------------------------->
-    <footer>
-        <a href="#">Me contacter !</a></p>
+    <!--Main (left)-->
+    <main id="main">
+
+        <!--Hébergements à Marseille-->
+        <div class="accomodation-container">
+            <section id="hebergement" class="hebergement">
+
+                <h2>Hébergements à Marseille</h2>
+
+                <section class="hebergement-cards">
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+
+                </section>
+
+            </section>
+
+            <!--Les plus populaires-->
+            <aside id="populaires" class="populaires">
+                <div class="populaire-title">
+                    <h2>Les plus polulaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <section id="populaires-cards" class="populaire-cards">
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Au c&#339;ur de l'eau Chambre d'hôte</h3>
+                                <p>Nuit à partir de <strong>71€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+                    <!--Une carte-->
+                    <div class="hebergement-card-item">
+                        <a href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre de l'auberge de la cannebière">
+                            <div class="contenu-de-la-carte">
+                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <p>Nuit à partir de <strong>68€</strong></p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Fin d'une carte-->
+
+                </section>
+            </aside>
+
+        </div>
+
+        <section id="activities" class="activities">
+            <h2>Activités à Marseille</h2>
+            <div class="activities-cards">
+                <!--Une carte Activité-->
+                <div class="activities-card-item">
+                    <a href="#">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Chambre de l'auberge de la cannebière">
+                        <div class="contenu-de-la-carte-activities">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin d'une carte-->
+                <!--Une carte Activité-->
+                <div class="activities-card-item">
+                    <a href="#">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Chambre de l'auberge de la cannebière">
+                        <div class="contenu-de-la-carte-activities">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin d'une carte-->
+                <!--Une carte Activité-->
+                <div class="activities-card-item">
+                    <a href="#">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Chambre de l'auberge de la cannebière">
+                        <div class="contenu-de-la-carte-activities">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin d'une carte-->
+                <!--Une carte Activité-->
+                <div class="activities-card-item">
+                    <a href="#">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Chambre de l'auberge de la cannebière">
+                        <div class="contenu-de-la-carte-activities">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin d'une carte-->
+                <!--Une carte Activité-->
+                <div class="activities-card-item">
+                    <a href="#">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Chambre de l'auberge de la cannebière">
+                        <div class="contenu-de-la-carte-activities">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin d'une carte-->
+                <!--Une carte Activité-->
+                <div class="activities-card-item">
+                    <a href="#">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Chambre de l'auberge de la cannebière">
+                        <div class="contenu-de-la-carte-activities">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </div>
+                <!--Fin d'une carte-->
+            </div>
+
+        </section>
+    </main>
+    <!---Footer--->
+    <footer id="footer">
+
+        <div class="footer-item">
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h3>A propos</h3>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+
+            </ul>
+        </div>
+
     </footer>
 
-
-
-
-
 </body>
+
+</section>
+
 </html>

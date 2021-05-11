@@ -1,0 +1,15 @@
+#conteneur
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.vignette{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+	height: auto;
+}
