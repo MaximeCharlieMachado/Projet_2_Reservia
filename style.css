@@ -1,15 +1,91 @@
-#conteneur
-{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 250px;
-    border-radius: 10px;
+body{
+    font-family: 'Raleway',sans-serif;
+    margin: 1% 5% 1%;
+
 }
 
-.vignette{
+/*Header*/
+/*Navigation*/
+nav{ 
     display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-	height: auto;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin:0;
+
+
 }
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-link{
+    padding: 3rem 1.5rem 0 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.register-link{
+    padding: 0 0 0 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav-link:hover{
+    color: blue;
+    border-top: solid blue ;
+}
+
+.register-link:hover{
+
+}
+/*Section Recherche*/
+
+.search-form{
+    outline: none;
+    display: flex;
+
+}
+
+.form-icon-map{
+    background-color :lightgray;
+    padding: 8px 16px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+}
+
+.form-search-area{
+    height: auto;
+    text-align: center;
+}
+
+
+input{
+    font-weight: bold; /* Texte en GRAS!!!*/
+    border: none;
+    font-size: 17px;
+    line-height: 33px;
+    padding-left: 8px;
+      
+}
+
+.search-button{
+        background-color:rgb(0, 101, 252);
+        border:none;
+        color: white;
+        padding: 8px 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        /*display: inline-block;*/
+        font-size: 16px;
+}
+
+
+
+
