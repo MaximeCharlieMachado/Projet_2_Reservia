@@ -4,6 +4,14 @@ body{
 
 }
 
+a{
+    color: black;
+}
+
+::placeholder{
+    color: black;
+}
+
 /*Header*/
 /*Navigation*/
 nav{ 
@@ -11,9 +19,8 @@ nav{
     justify-content: space-between;
     padding: 1rem 0;
     margin:0;
-
-
 }
+
 nav ul{
     display: flex;
     list-style: none;
@@ -22,19 +29,23 @@ nav ul{
 .nav-link{
     padding: 3rem 1.5rem 0 1.5rem;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;/*Police de la nav à modifie*/
 }
 
 .register-link{
     padding: 0 0 0 1.5rem;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;/*Police de la nav à modifie*/
 }
 
 .nav-link:hover{
-    color: blue;
-    border-top: solid blue ;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.img{
+    max-width: 50%;
 }
 
 .register-link:hover{
@@ -43,49 +54,83 @@ nav ul{
 /*Section Recherche*/
 
 .search-form{
-    outline: none;
     display: flex;
-
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-bottom: 5px ;
 }
 
 .form-icon-map{
-    background-color :lightgray;
-    padding: 8px 16px;
-    text-align: center;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;/*changer la taille de l'icone*/
+    align-items: center;
+    min-width: 56px;
+    min-height: 56px;
+    background :#f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 
 }
 
-.form-search-area{
-    height: auto;
-    text-align: center;
-}
-
-
-input{
-    font-weight: bold; /* Texte en GRAS!!!*/
-    border: none;
+.form-search-area input{
+    height: 50px;
+    min-width: 230px;
+    font-weight: bold;
     font-size: 17px;
-    line-height: 33px;
-    padding-left: 8px;
-      
+    padding-left: 20px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+
+
 }
 
 .search-button{
-        background-color:rgb(0, 101, 252);
+        background-color:#0065FC;
         border:none;
         color: white;
-        padding: 8px 16px;
         font-weight: bold;
+        font-size: 17px;
         text-align: center;
         text-decoration: none;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        /*display: inline-block;*/
-        font-size: 16px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /*font-size: 12px;/*Police du mot "rechercher"*/
+        height: 56px;
+        min-width: 145px;
 }
 
+/*Main*/
 
+.accomodation-container {
 
+    display: flex;
+    background-color :rgb(196, 173, 72);
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;    
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 25%;
 
+}
+
+/*Carte*/
+
+.rating{
+    color: green
+}
+
+.contenu-de-la-carte {
+    height: auto;
+    text-align: left;
+}
+
+.accomodation-card-item img{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+
+}
