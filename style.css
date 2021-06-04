@@ -1,7 +1,11 @@
 body{
     font-family: 'Raleway',sans-serif;
     margin: 1% 5% 1%;
+}
 
+*{
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -51,6 +55,16 @@ nav ul{
 .register-link:hover{
 
 }
+
+#search h2{
+    padding-bottom: 10px;
+}
+
+#search p{
+    padding-bottom: 20px;
+}
+
+
 /*Section Recherche*/
 
 .search-form{
@@ -113,9 +127,98 @@ nav ul{
     border-top-right-radius: 12px;    
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    margin: 25%;
+    margin: 5%;
 
 }
+/*Filtres*/
+
+
+.section-button{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.filter-title{
+    padding-right: 20px;
+    font-size: 100% ;
+    font-weight: bold;
+}
+
+.filter-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0 20px 0 0;
+    border-radius: 50px;
+    border: 2px solid lightgray;
+    font-weight: bold;
+    margin-right: 10px;
+    background-color:white;
+    height: 49px;
+}
+
+.filter-button:hover{
+    background-color: lightgray;
+}
+
+.filter-button i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #0065FC;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    position:relative;
+    right: 5px;
+
+}
+
+.filter-button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    height: 50px;
+    min-width: 50px;
+}
+
+/*Info*/
+
+.info{
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding-bottom: 20px;
+}
+
+.info i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #0065FC;
+
+}
+
+.info p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+
+
+
+
 
 /*Carte*/
 
