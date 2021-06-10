@@ -1,15 +1,22 @@
 body{
     font-family: 'Raleway',sans-serif;
     margin: 1% 5% 1%;
+
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a{
     color: black;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 ::placeholder{
@@ -116,20 +123,6 @@ nav ul{
         min-width: 145px;
 }
 
-/*Main*/
-
-.accomodation-container {
-
-    display: flex;
-    background-color :rgb(196, 173, 72);
-    text-align: center;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;    
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    margin: 5%;
-
-}
 /*Filtres*/
 
 
@@ -215,25 +208,168 @@ nav ul{
     padding-left: 10px;
 }
 
+/*Main*/
+
+.accomodation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Herbergement à marseille*/
+
+.accomodation{
+    flex-basis: 65%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+
+}
+
+.accomodation h2{
+    font-size: 20px;
+    padding: 10px 20px 10px 10px;
+}
 
 
+.accomodation-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.accomodation-card-item a{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 8px 16px 8px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #a1a1a1;
+    min-height: 100%;
+}
 
 
+.accomodation-card-item a img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 11.4rem;
+    object-fit: cover;
+}
 
-/*Carte*/
+.contenu-de-la-carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 90px;
+    padding: 10px 0 0 15px;
+}
 
 .rating{
-    color: green
+    color:#b1b1b1;
 }
 
-.contenu-de-la-carte {
-    height: auto;
-    text-align: left;
+.fa-star--activate{
+    color: #0065FC;
 }
 
-.accomodation-card-item img{
+.afficher-plus{
+    padding: 4rem 2rem 5rem 3.5rem;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+}
+
+/*Les plus populaires*/
+.popular{
+    flex-basis: 32%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    
+}
+
+.popular-title{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 20px 20px 20px 20px;
+}
+
+.popular-title h2{
+    font-size: 32px;
+
+}
+
+.popular-title i{
+    font-size: 32px;
+}
+
+.popular-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 40px;
+    margin: 0 auto;
+    width: 90%;
+}
+.popular-card-item{
+
+}
+
+.popular-card-item a{
     display: flex;
-    justify-content: space-around;
-    width: 75%;
+    flex-direction: row;
+    min-height: 100%;
+    box-shadow: 0 0 10px #a1a1a1;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.popular-card-item img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+    max-width: 42%;
+    height: 180px;
+}
+
+.popular-contenu-de-la-carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px 10px 25px;
+}
+
+.popular-contenue-de-la-carte-description h3{
+    padding-bottom:10px ;
+}
+
+/*Activités*/
+
+.activities{
+
+}
+
+.activities h2{
+    font-size: 16px;
+    padding: 30px 0 30px 0;
+    margin-top: 24px;
+}
+
+.activities-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+
+.activities-card-item a{
+
+}
+
+.activities-card-item img{
 
 }
