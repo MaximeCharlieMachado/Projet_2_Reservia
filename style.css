@@ -272,7 +272,7 @@ nav ul {
 }
 
 .afficher-plus {
-  padding: 135px 0 4% 5%;
+  padding: 123px 0 0 5%;
   border: none;
   font-size: 20px;
   font-weight: bold;
@@ -329,7 +329,7 @@ nav ul {
   object-fit: cover;
   max-width: 42%;
   min-width: 42%;
-  height: 180px;
+  height: 167px;
 }
 
 .popular-contenu-de-la-carte {
